@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LightBoard · 感知光影</title>
+<meta name="description" content="LightBoard 是面向 iOS 15–17 的图标主题与全天动态阴影引擎：图标的影子随一天的太阳移动，iPhone 主屏与 CarPlay 同一束光。">
+<link rel="canonical" href="https://tweak.smartisanios.com/">
+<meta name="theme-color" content="#0f0b08">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LightBoard">
+<meta property="og:title" content="LightBoard · 感知光影">
+<meta property="og:description" content="让图标，活在真实的光里。iPhone 与 CarPlay 的全天动态图标阴影。">
+<meta property="og:url" content="https://tweak.smartisanios.com/">
+<meta property="og:image" content="https://tweak.smartisanios.com/assets/poster.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LightBoard · 感知光影">
+<meta name="twitter:description" content="让图标，活在真实的光里。iPhone 与 CarPlay 的全天动态图标阴影。">
+<meta name="twitter:image" content="https://tweak.smartisanios.com/assets/poster.jpg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="nav" aria-label="站点导航">
+  <a class="brand" href="#top" aria-label="LightBoard 首页">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="11" width="16" height="16" rx="4.5" fill="#000" opacity=".28"/><rect x="6" y="6" width="16" height="16" rx="4.5" fill="#e9d9bd"/></svg>
+    <span>LightBoard</span>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="#idea">理念</a></li>
+      <li><a href="#features">功能</a></li>
+      <li><a href="#compat">兼容</a></li>
+      <li><a href="#get">获取</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media">
+      <video id="hero-video" class="hero-video" autoplay muted loop playsinline preload="metadata"
+             poster="assets/hero-poster.jpg" width="1920" height="1080"
+             aria-label="宣传影片：一天之中，iPhone 与 CarPlay 图标的影子随阳光变化">
+        <source src="assets/hero-1280.mp4" type="video/mp4" media="(max-width: 900px)">
+        <source src="assets/hero.webm" type="video/webm">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+      <button class="play-toggle" id="play-toggle" type="button" aria-controls="hero-video" aria-pressed="false">
+        <span class="play-icon" aria-hidden="true"></span><span class="play-label">暂停</span>
+      </button>
+    </div>
+    <div class="hero-copy">
+      <h1 id="hero-title">感知光影</h1>
+      <p class="lead">让图标，活在真实的光里。</p>
+      <p class="kicker">LightBoard for iOS · iPhone &amp; CarPlay</p>
+      <p class="hero-cta"><a class="btn" href="#get">即将上线</a><a class="btn ghost" href="#idea">了解理念</a></p>
+    </div>
+  </section>
+
+  <section class="idea" id="idea" aria-labelledby="idea-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">理念</p>
+      <h2 id="idea-title">光，从不停留。</h2>
+      <p>我们希望桌面上的每一枚图标，都像放在木桌上的真实物件：被窗外的光照亮，也投下属于自己的影子。</p>
+      <p>影子随一天的太阳移动——清晨长而柔，正午短而清，午后悄悄转向另一侧。你不必看时间，也能感觉到一天正在流过。</p>
+      <ol class="day" aria-label="一天中的影子">
+        <li><span class="day-t">清晨</span><span class="day-d">长而柔</span></li>
+        <li><span class="day-t">正午</span><span class="day-d">短而清</span></li>
+        <li><span class="day-t">午后</span><span class="day-d">转向另一侧</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="features" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <p class="eyebrow">功能</p>
+      <h2 id="features-title">一束光，照亮整块屏幕。</h2>
+
+      <article class="feature">
+        <figure class="feature-media">
+          <img src="assets/still-phone.jpg" width="1920" height="800" loading="lazy" decoding="async"
+               alt="iPhone 主屏特写：时钟、天气、日历、照片等拟物图标在木桌暖光下投出柔和的影子">
+        </figure>
+        <div class="feature-copy">
+          <h3>全天动态阴影</h3>
+          <p>图标的影子随一天的时间连续变化：方向、长短、浓淡与柔和度一起改变，像真的被阳光照着。</p>
+        </div>
+      </article>
+
+      <article class="feature reverse">
+        <figure class="feature-media">
+          <img src="assets/still-carplay.jpg" width="1920" height="800" loading="lazy" decoding="async"
+               alt="CarPlay 界面：电话、信息、音乐、日历、设置等图标带有与手机一致的影子">
+        </figure>
+        <div class="feature-copy">
+          <h3>iPhone 与 CarPlay，同一束光</h3>
+          <p>主屏与 CarPlay 使用同一套光影。上车之后，图标的影子依旧跟着太阳走。</p>
+        </div>
+      </article>
+
+      <div class="grid2">
+        <article class="card">
+          <h3>锤子风格拟物主题</h3>
+          <p>一套细致的拟物图标主题。主题与引擎相互独立，各自安装、各自卸载，互不影响。</p>
+        </article>
+        <article class="card">
+          <h3>先预览，再应用</h3>
+          <p>在设置中预览效果，确认后一次应用。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="compat" id="compat" aria-labelledby="compat-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">兼容性</p>
+      <h2 id="compat-title">诚实地说明适配范围。</h2>
+      <dl class="specs">
+        <div><dt>系统</dt><dd>iOS 15.0 – 17.x</dd></div>
+        <div><dt>环境</dt><dd>RootHide · arm64e</dd></div>
+        <div><dt>依赖</dt><dd>ElleKit</dd></div>
+        <div><dt>认证基线</dt><dd>iOS 15.1 真机验证</dd></div>
+      </dl>
+      <p class="note">iOS 15.1 为真机认证基线；其余版本为兼容候选。LightBoard 会按系统版本逐项校验，条件不满足时自动停用相关功能，而不是冒险运行。</p>
+    </div>
+  </section>
+
+  <!-- ===== 获取方式占位区块：上线后替换为源地址 / 购买链接 ===== -->
+  <section class="get" id="get" aria-labelledby="get-title">
+    <div class="wrap narrow center">
+      <p class="eyebrow">获取</p>
+      <h2 id="get-title">即将上线，敬请期待。</h2>
+      <p class="muted">获取方式将在这里公布。</p>
+    </div>
+  </section>
+  <!-- ===== /获取方式占位区块 ===== -->
+
+  <section class="tribute" aria-labelledby="tribute-title">
+    <figure class="tribute-media">
+      <img src="assets/still-light.jpg" width="1920" height="800" loading="lazy" decoding="async" alt="">
+      <figcaption class="tribute-copy">
+        <h2 id="tribute-title">谨以此，致敬 Smartisan OS</h2>
+        <p>致那些把图标当作真实物件来雕琢的人。</p>
+      </figcaption>
+    </figure>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© 2026 LightBoard</p>
+    <p class="legal">Smartisan 及相关标识为锤子科技（北京）股份有限公司的商标；iPhone、iOS、CarPlay 为 Apple Inc. 的商标。LightBoard 为独立开发的第三方作品，与上述公司无关联，亦未获其认可。</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var v = document.getElementById('hero-video');
+  var btn = document.getElementById('play-toggle');
+  if (!v || !btn) return;
+  var label = btn.querySelector('.play-label');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Pick the lighter file on narrow screens (for browsers that ignore <source media>).
+  try {
+    var small = window.matchMedia('(max-width: 900px)').matches;
+    var want = small ? 'assets/hero-1280.mp4' : null;
+    if (want && v.currentSrc && v.currentSrc.indexOf('hero-1280') === -1) { v.src = want; }
+  } catch (e) {}
+
+  function sync() {
+    var paused = v.paused;
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    btn.classList.toggle('is-paused', paused);
+    label.textContent = paused ? '播放' : '暂停';
+  }
+  if (reduce) {
+    v.removeAttribute('autoplay');
+    v.pause();
+    btn.classList.add('prominent');
+  }
+  btn.addEventListener('click', function () {
+    if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    else { v.pause(); }
+  });
+  v.addEventListener('play', sync);
+  v.addEventListener('pause', sync);
+  // If no source can be loaded the poster stays visible; hide the control.
+  var sources = v.querySelectorAll('source');
+  if (sources.length) {
+    sources[sources.length - 1].addEventListener('error', function () {
+      if (v.networkState === 3) btn.hidden = true;
+    });
+  }
+  sync();
+})();
+</script>
+</body>
+</html>
