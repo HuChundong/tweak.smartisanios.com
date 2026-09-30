@@ -6,6 +6,19 @@
 <title>LightBoard · 感知光影</title>
 <meta name="description" content="LightBoard 是面向 iOS 15–17 的图标主题与全天动态阴影引擎：图标的影子随一天的太阳移动，iPhone 主屏与 CarPlay 同一束光。">
 <link rel="canonical" href="https://tweak.smartisanios.com/">
+<link rel="alternate" hreflang="zh-CN" href="https://tweak.smartisanios.com/">
+<link rel="alternate" hreflang="en" href="https://tweak.smartisanios.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://tweak.smartisanios.com/">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('lb-lang')) return;
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+    for (var i = 0; i < langs.length; i++) { if (/^zh/i.test(langs[i])) return; }
+    location.replace('/en/');
+  } catch (e) {}
+})();
+</script>
 <meta name="theme-color" content="#0f0b08">
 <meta name="color-scheme" content="dark">
 
@@ -16,6 +29,7 @@
 <meta property="og:url" content="https://tweak.smartisanios.com/">
 <meta property="og:image" content="https://tweak.smartisanios.com/assets/poster.jpg">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="LightBoard · 感知光影">
 <meta name="twitter:description" content="让图标，活在真实的光里。iPhone 与 CarPlay 的全天动态图标阴影。">
@@ -42,6 +56,7 @@
       <li><a href="#compat">兼容</a></li>
       <li><a href="#get">获取</a></li>
     </ul>
+    <a class="lang-switch" href="/en/" hreflang="en" lang="en" data-lang="en" aria-label="English version">EN</a>
   </nav>
 </header>
 
@@ -164,6 +179,9 @@
 </footer>
 
 <script>
+document.querySelectorAll('.lang-switch').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('lb-lang', a.getAttribute('data-lang')); } catch (e) {} });
+});
 (function () {
   var v = document.getElementById('hero-video');
   var btn = document.getElementById('play-toggle');
